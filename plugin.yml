@@ -1,0 +1,47 @@
+name: UltimateAntiLag
+version: 1.0.0
+api: 5.0.0
+main: Phoenix\UltimateAntiLag\Main
+author: Phoenix4041
+description: "Plugin avanzado de clearlag que elimina items automaticamente despues de un tiempo configurado"
+website: "https://github.com/Phoenix4041"
+
+commands:
+  clearlag:
+    description: "Elimina manualmente todos los items del suelo"
+    permission: ultimateantilag.clearlag
+    usage: "/clearlag"
+    aliases: [cl, lag]
+    
+  antilagstats:
+    description: "Muestra estadisticas del plugin"
+    permission: ultimateantilag.stats
+    usage: "/antilagstats"
+    aliases: [alstats, lagstats]
+    
+  antilagreload:
+    description: "Recarga la configuracion del plugin"
+    permission: ultimateantilag.reload
+    usage: "/antilagreload"
+    aliases: [alreload, lagreload]
+
+permissions:
+  ultimateantilag.*:
+    description: "Acceso completo a UltimateAntiLag"
+    default: op
+    children:
+      ultimateantilag.clearlag: true
+      ultimateantilag.stats: true
+      ultimateantilag.reload: true
+      
+  ultimateantilag.clearlag:
+    description: "Permite usar el comando clearlag"
+    default: op
+    
+  ultimateantilag.stats:
+    description: "Permite ver estadisticas del plugin"
+    default: op
+    
+  ultimateantilag.reload:
+    description: "Permite recargar la configuracion"
+    default: op
