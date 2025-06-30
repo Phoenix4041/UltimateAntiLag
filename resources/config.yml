@@ -1,0 +1,30 @@
+# ================================
+# UltimateAntiLag Configuration
+# Creado por Phoenix4041
+# GitHub: github.com/Phoenix4041
+# ================================
+
+# Tiempo en segundos antes de que los items se eliminen automaticamente
+# Valor por defecto: 60 segundos (1 minuto)
+item-lifetime: 60
+
+# Enviar mensaje a todos los jugadores cuando se ejecute /clearlag 
+broadcast-clearlag: false
+
+# ================================
+# Configuraciones Avanzadas
+# ================================
+
+# Intervalo de limpieza en ticks (20 ticks = 1 segundo)
+# No se recomienda cambiar este valor!
+cleanup-interval: 20
+
+# ================================
+# Informacion del Plugin
+# ================================
+# Plugin: UltimateAntiLag
+# Version: 1.0.0
+# Autor: Phoenix4041
+# Descripcion: Plugin que elimina automaticamente los items
+#              del suelo despues del tiempo configurado
+# ================================
