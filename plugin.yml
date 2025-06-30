@@ -29,10 +29,6 @@ permissions:
   ultimateantilag.*:
     description: "Acceso completo a UltimateAntiLag"
     default: op
-    children:
-      ultimateantilag.clearlag: true
-      ultimateantilag.stats: true
-      ultimateantilag.reload: true
       
   ultimateantilag.clearlag:
     description: "Permite usar el comando clearlag"
